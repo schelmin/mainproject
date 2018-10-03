@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+ <header class="masthead">
+  <div class="centered">
+    <div>
+       <nav class="main-menu">
+              <a href="index.html">Головна</a>  
+              <a href="gallery.html">Галерея</a> 
+              <a href="articles.html">Статті</a> 
+              <a href="contact.html">Контакти</a> 
+       </nav>
+       <h1 class="site-title">Хто ми</h1>
+    </div>
+  </div>
+ </header>
+<main class="main-area">
+
+  <div class="centered">
+     <form method="POST" action="https://formspree.io/mailtoannan@gmail.com">
+        <fieldset>
+           <legend> Напишіть нам:
+           </legend>
+           <input type="radio" name="good" value="yes" checked="checked" />
+           <small>Так</small><br />
+           <input type="radio" name="good" value="no" /> <small>Ні</small><br />
+           <p><input type="text" name="author" value="" size="25" />
+              <small> Ім'я</small>
+           </p>
+           <p><input type="text" name="email" value="" size="25" />
+              <small> ел.пошта</small>
+           </p>
+           <p><textarea name="comment" cols="48" rows="8"> </textarea>
+           </p>
+           <p><input name="submit" type="submit" value="Відправити"></p>
+       </fieldset>
+     </form>
+  </div>
+  <!-- .centered -->
+</main>
+<footer class='footer'>
+  <div>
+    <h5>© Коти зі Львова 2018</h5>
+    <h4>Розкажи про нас друзям!</h4>
+  </div>
+  <div>
+    <a href="contact.html">Напиши нам</a>
+  </div>
+</footer>    
+</body>
+</html>
