@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
 
 .masthead {
     background: #e74c3c;
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; 
-    font-family: 'Caveat', cursive;
+    font-family: 'Philosopher', cursive;
 }
   
    .main-menu a {
@@ -31,7 +31,7 @@
 
 .site-title {
 	color: white;
-	font-family: 'Caveat', cursive;
+	font-family: 'Philosopher', cursive;
 	margin: 0 0 1em;
     padding: 1em 0;
     font-size: 2em;
@@ -40,9 +40,34 @@
 }
 
 body {
-  margin: 0;
+  max-width:1200px;
+  margin: auto;
   padding: 0;
-  font-family: 'Caveat', sans-serif;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 .card a {
@@ -106,11 +131,13 @@ body {
     }
 } 
 
+
 footer {
     background: #e74c3c;
   	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
   	min-height: 50px;
     text-align: center;
+    margin-top: 30px;
   	}
  
 .h4 {
@@ -154,6 +181,26 @@ footer {
   margin:50px auto;
 }
 
+.button {
+  max-width:450px;
+  font-family: 'Philosopher', sans-serif;
+  width: 100%;
+  background:#e74c3c;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:center;
+  transition: all 0.3s;
+  font-weight:600; 
+}
+.button:hover {
+  background:#0B0B3B; 
+}
+
 .f-input::placeholder {
   color:#0B0B3B;
   opacity:0.9;
@@ -167,7 +214,7 @@ footer {
   margin-bottom: 15px;
   width:100%;
   box-sizing: border-box;
-  font-family: 'Caveat', cursive;
+  font-family: 'Philosopher', cursive;
   color:#0B0B3B;
   font-weight:500;
   font-size: 18px;
@@ -185,22 +232,3 @@ textarea {
   resize:vertical;
 }
 
-.contact button {
-  max-width:450px;
-  font-family: 'Caveat', sans-serif;
-  width: 100%;
-  background:#e74c3c;
-  border-radius:10px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  text-align:center;
-  transition: all 0.3s;
-  font-weight:600; 
-}
-.contact button:hover {
-  background:#0B0B3B; 
-}
