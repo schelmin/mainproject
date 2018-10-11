@@ -17,42 +17,21 @@
               <a href="articles.html">Статті</a> 
               <a href="contact.html">Контакти</a> 
        </nav>
-       <h1 class="site-title">Хто ми</h1>
+       <h1 class="site-title">Зворотній зв'язок</h1>
     </div>
   </div>
  </header>
-<main class="main-area">
-
-  <div class="centered">
-     <form method="POST" action="https://formspree.io/mailtoannan@gmail.com">
-        <fieldset>
-           <legend> Напишіть нам:
-           </legend>
-           <input type="radio" name="good" value="yes" checked="checked" />
-           <small>Так</small><br />
-           <input type="radio" name="good" value="no" /> <small>Ні</small><br />
-           <p><input type="text" name="author" value="" size="25" />
-              <small> Ім'я</small>
-           </p>
-           <p><input type="text" name="email" value="" size="25" />
-              <small> ел.пошта</small>
-           </p>
-           <p><textarea name="comment" cols="48" rows="8"> </textarea>
-           </p>
-           <p><input name="submit" type="submit" value="Відправити"></p>
-       </fieldset>
-     </form>
-  </div>
-  <!-- .centered -->
-</main>
-<footer class='footer'>
-  <div>
-    <h5>© Коти зі Львова 2018</h5>
-    <h4>Розкажи про нас друзям!</h4>
-  </div>
-  <div>
-    <a href="contact.html">Напиши нам</a>
-  </div>
-</footer>    
+ <main class="contact">
+   <h1>Напиши нам</h1>
+        <form method="POST" action="https://formspree.io/mailtoannan@gmail.com">
+            <input name="name" type="text" class="f-input" placeholder="Як тебе звати">
+            <input name="email" type="text" class="f-input" placeholder="Електронна адреса"> 
+            <textarea name="text" class="f-input" placeholder="Текст листа"></textarea>
+            <button type="button" value="Send">Надіслати</button>
+        </form>
+ </main>
+ <footer class="footer">
+    <h4 class ="h4">© Коти зі Львова 2018</h4>
+ </footer>     
 </body>
 </html>
